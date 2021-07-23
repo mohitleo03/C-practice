@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+char str[100],tem;
+int a,b;
+printf("\n Enter the string:-");
+gets(str);
+printf(" %s Alphabatical Order:-",str);
+for(a=0;str[a];a++)
+{
+	for(b=a+1;str[b];b++)
+	{
+		if(str[b]<str[a])
+		{
+			tem=str[b];
+			str[b]=str[a];
+			str[a]=tem;
+		}
+	}
+}
+printf(" %s\n",str);
+getch();
+}
