@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  clrscr();
+  int n,d1,d2,d3,d4,d5,d,m;
+  printf("enter a number and number of digits");
+  scanf("%d%d",&n,&d);
+  if(d==1)
+  {
+	m=n;
+  }
+  if(d==2)
+  {
+	d1=n%10;
+	d2=n/10;
+	m=d2*10+d1;
+  }
+  if(d==3)
+  {
+	d1=n%10;
+	n=n/10;
+	d2=n%10;
+	d3=n/10;
+	m=d1*100+d2*10+d3;
+  }
+  if(d==4)
+  {
+	d1=n%10;
+	n=n/10;
+	d2=n%10;
+	n=n/10;
+	d3=n%10;
+	d4=n/10;
+	m=d1*1000+d2*100+d3*10+d4;
+  }
+if(d==5)
+{
+d1=n%10;
+n=n/10;
+d2=n%10;
+n=n/10;
+d3=n%10;
+n=n/10;
+d4=n%10;
+d5=n/10;
+m=d1*10000+d2*1000+d3*100+d4*10+d5;
+}
+printf("the swap of the number is %d",m);
+getch();
+}

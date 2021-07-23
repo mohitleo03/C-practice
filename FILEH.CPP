@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char name[50];
+int marks,i,n;
+printf("enter the no.of students");
+scanf("%d",&n);
+FILE *fptr;
+fptr=(fopen("student.txt","a"));
+if(fptr==NULL)
+{
+printf("error");
+}
+for(i=0;i<n;i++)
+{
+printf("for student%d\nenter name",i+1);
+scanf("%s",name);
+printf("enter marks:");
+scanf("%d",marks);
+fprintf(fptr,"\nname %s\nmarks %d\n",name,marks);
+}
+fclose(fptr);
+getch();
+}

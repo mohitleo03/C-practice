@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char a[10];
+printf("enter name of month");
+scanf("%s",a);
+switch(a)
+{
+case "january": printf("no of days in this month is 31");
+		break;
+case "february": printf("no of days in this month is 28");
+		break;
+case "march": printf("no of days in this month is 30");
+		break;
+case "april": printf("no of days in this month is 30");
+		break;
+case "may": printf("no of days in this month is 31");
+		break;
+case "june": printf("no of days in this month is 30");
+		break;
+case "july": printf("no of days in this month is 31");
+		break;
+case "august": printf("no of days in this month is 31");
+		break;
+case "september": printf("no of days in this month is 30");
+		break;
+case "october": printf("no of days in this month is 31");
+		break;
+case "november": printf("no of days in this month is 30");
+		break;
+case "december": printf("no of days in this month is 31");
+		break;
+}
+getch();
+}

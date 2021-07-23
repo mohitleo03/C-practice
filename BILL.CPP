@@ -1,0 +1,32 @@
+#include<iostream.h>
+#include<conio.h>
+void am()
+{
+int a1,u,a;
+char x[10];
+cout<<"enter your name";
+cin>>x;
+cout<<"your bill no.";
+cin>>a1;
+cout<<"units used";
+cin>>u;
+if (u<100)
+{
+a=u*5;
+}
+else
+if(u>100 && u<200)
+{
+a=(u-100)*10+100*5;
+}
+else
+a=(u-200)*15+100*5+100*10;
+cout<<"your amount is "<<a;
+}
+void main ()
+{
+clrscr();
+am();
+getch();
+}
+

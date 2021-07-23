@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+int sum(int n)
+{
+sum
+if(n==1)
+return 1;
+else
+return sum(n-1);
+}
+void main()
+{
+clrscr();
+int n;
+printf("enter n");
+scanf("%d",&n);
+printf("%d",sum(n));
+getch();
+}

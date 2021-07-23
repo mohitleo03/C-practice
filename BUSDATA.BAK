@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+struct bus      //structure for bus data
+{
+   char complaint[500];
+   int bus_no,location;
+}bus;
+void main()
+{
+ FILE *fptr;
+ fptr=fopen("bus_data.dat","a");
+ printf("enter bus no.");
+ scanf("%d",&bus.bus_no);
+ printf("enter location");
+ scanf("%d",&bus.location);
+ fwrite(&bus,sizeof(struct bus),1,fptr);
+ fclose(fptr);
+  FILE *f;
+ f=fopen("bus_data.dat","r");
+ fread(&bus,sizeof(struct bus),1,f);
+ printf("%d%d",bus.bus_no,bus.location);
+ fclose(f);
+ getch();
+ }
